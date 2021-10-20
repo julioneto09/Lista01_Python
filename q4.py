@@ -21,11 +21,8 @@ ir = 0.11*bruto
 desc = inss+sind+ir
 liq = bruto - desc
 
-def r(x) :
-    return round(x,2)
-
-print('\nLetra a: Valor Bruto: R$ {}' .format(r(bruto)))
-print('\nLetra b: INSS: R$ {}' .format(r(inss)))
-print('\nLetra c: Sindicato: R$ {}' .format(r(sind)))
-print('\nLetra d: Valor Líquido: R$ {}' .format(r(liq)))
-print('\nLetra e: Descontos: R$ {}' .format(r(desc)))
+print('\nLetra a: Valor Bruto: R$ %.2f' %bruto)
+print('\nLetra b: INSS: R$ %.2f' %(inss))
+print('\nLetra c: Sindicato: R$ %.2f'%(sind))
+print('\nLetra d: Valor Líquido: R$ %.2f' %(liq))
+print('\nLetra e: Descontos: R$ %.2f' %(desc))
