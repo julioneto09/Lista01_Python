@@ -23,8 +23,8 @@ def h_s(x) :
 
 def d_s(x) :
     return x*d*h*m
-'''Criando funções para converter minutos em segundos, horas em segundos e dias em segundos
-'''
+#Criando funções para converter minutos em segundos, horas em segundos e dias em segundos
+
 total = m_s(minuto)+h_s(hora)+d_s(dia)+segundos
 
 print('\nO total é de %ds' %total)
