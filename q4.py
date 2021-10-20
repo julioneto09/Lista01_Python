@@ -10,10 +10,10 @@ d) o salário líquido.
 e) calcule os descontos.
 '''
 
-ganho = float(input('Quanto você ganha por hora? '))
+valor = float(input('Quanto você ganha por hora? '))
 horas = float(input('Informe quantas horas trabalhou no mês: '))
 
-bruto = ganho*horas
+bruto = valor*horas
 
 inss = 0.08*bruto
 sind = 0.05*bruto
@@ -21,7 +21,11 @@ ir = 0.11*bruto
 desc = inss+sind+ir
 liq = bruto - desc
 
-print('\nLetra a: Valor Bruto R$ %.2f\nLetra b: INSS R$ %.2f \
-    \nLetra c: Sindicato R$ %.2f\nLetra d: Valor Líquido R$ %.2f \
-    \nLetra e: Descontos R$ %.2f' %(bruto, inss, sind, liq, desc))
+def r(x) :
+    return round(x,2)
 
+print('\nLetra a: Valor Bruto: R$ {}' .format(r(bruto)))
+print('\nLetra b: INSS: R$ {}' .format(r(inss)))
+print('\nLetra c: Sindicato: R$ {}' .format(r(sind)))
+print('\nLetra d: Valor Líquido: R$ {}' .format(r(liq)))
+print('\nLetra e: Descontos: R$ {}' .format(r(desc)))
