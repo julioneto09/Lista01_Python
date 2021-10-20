@@ -5,22 +5,20 @@ a) o produto do dobro do primeiro número com a metade do segundo número.
 b) a soma do triplo do primeiro número com o terceiro número.
 c) o terceiro número elevado ao cubo.
 '''
-import math
 
-x = input('Informe um número inteiro: ')
-y = input('Informe outro número inteiro: ')
-z = input('Informe um número real:  ')
+x = int(input('Informe um número inteiro: '))
+y = int(input('Informe outro número inteiro: '))
+z = float(input('Informe um número real:  '))
 
-dobro = 2*int(x)
-metade = int(y)/2
-triplo = 3*int(x)
-cubo = math.pow(float(z),3)
-#cubo = pow(float(z), 3)
+dobro_x = 2*x
+metade_y = y/2
+triplo_x = 3*x
+cubo_z = pow(z, 3)
 
-a = dobro*metade
-b = triplo+float(z)
-c = cubo
+a = dobro_x*metade_y
+b = triplo_x+z
+c = cubo_z
 
-print('\nLetra a: %f\nLetra b: %f\nLetra c: %f' %(a, b, c))
+print('\nLetra a: {}\nLetra b: {}\nLetra c: {:f}'.format(a,b,c))
 
 
